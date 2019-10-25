@@ -19,15 +19,15 @@
     "url": "https://github.com/snipsco/yett/issues"
   },
   "scripts": {
-    "build": "npm run lint && rollup -c && rollup -c --o docs/lib/yett.min.js && rollup -c --o test/scripts/yett.min.js",
+    "build": "yarn lint && rollup -c && rollup -c --o docs/lib/yett.min.js && rollup -c --o test/scripts/yett.min.js",
     "watch": "rollup -c -w -o docs/lib/yett.min.js",
     "serve": "http-server -c-1 docs",
-    "dev": "concurrently \"npm run watch\" \"npm run serve\"",
+    "dev": "concurrently \"yarn watch\" \"yarn serve\"",
     "test:blacklist": "karma start --single-run --browsers ChromeHeadless,FirefoxHeadless,Safari karma.conf.js",
     "test:whitelist": "WHITELIST=1 karma start --single-run --browsers ChromeHeadless,FirefoxHeadless,Safari karma.conf.js",
-    "test": "npm run test:blacklist && npm run test:whitelist",
+    "test": "yarn test:blacklist && yarn test:whitelist",
     "lint": "eslint src",
-    "start": "npm run build && npm run test"
+    "start": "yarn build && yarn test"
   },
   "author": "Julien Elbaz",
   "contributors": [
