@@ -1,5 +1,5 @@
 {
-  "name": "yett",
+  "name": "@meilenstein-io/yett",
   "version": "0.1.10",
   "description": "A small library that can prevent other scripts from executing.",
   "main": "dist/yett.min.js",
@@ -13,10 +13,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/snipsco/yett"
+    "url": "https://github.com/meilenstein-io/yett"
   },
   "bugs": {
-    "url": "https://github.com/snipsco/yett/issues"
+    "url": "https://github.com/meilenstein-io/yett/issues"
   },
   "scripts": {
     "build": "yarn lint && rollup -c && rollup -c --o docs/lib/yett.min.js && rollup -c --o test/scripts/yett.min.js",
